@@ -33,7 +33,3 @@ let name = () => {
 };
 let btn = document.getElementById("do-the-generate");
 btn.addEventListener("click", name);
-
-// setInterval(() => {
-//     name();
-// }, 3000);
