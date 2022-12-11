@@ -1,6 +1,7 @@
-# **WIP** | The Ultimate FBW-WD-D07 Student-Name-Generator 3000&trade; &copy;! | **WIP**
+# The Ultimate FBW-WD-D07 Student-Name-Generator 3000 v2&trade; &copy;!
 
 Just a fun little project made with the intention that our teachers can randomly generate the name of a student of our class 'FBW-WD-D07', to make it easier to choose who should present the current assignment or answer a question.
+[See v1 here]()
 
 ---
 
@@ -16,7 +17,6 @@ And that's it!
 
 ### Credit where credit's due:
 
-At this point in time we haven't had Javascript lessons yet, so I searched for a solution that doesn't involve Javascript and just uses HTML and CSS.
-Unless my Google-Fu is too rusty, I couldn't find such a solution.
-So I watched [Alanna Risse's YouTube Video](https://www.youtube.com/watch?v=h1VX7n9xAeI) on exactly that: How to make a random Message Generator.
-So thank you, [Alanna](https://github.com/alannarisse), for the fun video that not only helped me make this project but also understand what I was doing!
+Big shoutout to [Ali](https://github.com/aliho3ein) for creating the better code and also to [Edward](https://github.com/edwardtanguay) for helping me understand what all that code does!
+
+v3 will come eventually, new and improved, but this time I'll hopefully be far enough into JS to write everything myself!
