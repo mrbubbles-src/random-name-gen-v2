@@ -1,0 +1,146 @@
+@import "_variables.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}
+:root {
+    font-size: 62.5%;
+}
+body {
+    background-color: $main-color;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    @media (min-width: 768px) {
+        height: 100vh;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 2.8rem;
+        color: $accent-color2;
+        text-align: center;
+        padding: 5px;
+        margin: 5px auto;
+        @media (min-width: 768px) {
+            font-size: 3rem;
+            position: fixed;
+            top: 50px;
+        }
+        @media (min-width: 992px) {
+            font-size: 4rem;
+            top: 35px;
+        }
+    }
+}
+.main-container {
+    margin: 25px auto;
+    width: 350px;
+    height: 456px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    @media (min-width: 768px) {
+        width: 476px;
+    }
+    hr {
+        width: 25%;
+        height: 1px;
+        background-color: $accent-color1;
+        border: none;
+    }
+    .generate,
+    .reset {
+        all: unset;
+        margin: 50px;
+        padding: 15px;
+        border: 1px solid $accent-color3;
+        border-radius: $border-radius;
+        background-color: $accent-color1;
+        color: $accent-color3;
+        box-shadow: $box-shadow;
+        font: {
+            size: 1.8rem;
+            weight: bold;
+        }
+        @media (min-width: 992px) {
+            background: linear-gradient(
+                to right,
+                $accent-color1 50%,
+                $accent-color2 50%
+            );
+            background-size: 200% 100%;
+            transition: background 2s ease, color 2s linear;
+            &:hover {
+                background-position: right bottom;
+                color: $accent-color1;
+                cursor: pointer;
+            }
+        }
+    }
+    .generated-name {
+        width: 250px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+        h2 {
+            font: {
+                size: 3.5rem;
+                weight: bold;
+            }
+            color: $accent-color2;
+            text-shadow: 0 0 5px $accent-color3;
+            text-align: center;
+        }
+    }
+}
+.namelist {
+    #names {
+        width: 100%;
+    }
+}
+footer {
+    @media (min-width: 768px) {
+        position: fixed;
+        bottom: 10px;
+    }
+    hr {
+        width: 90%;
+        height: 1px;
+        background-color: $accent-color1;
+        border: none;
+        margin: 10px auto;
+    }
+    p {
+        font: {
+            size: 1.1rem;
+            weight: bold;
+        }
+        color: $accent-color2;
+        text-align: center;
+        padding: 10px;
+        a {
+            color: $accent-color1;
+            transition: 300ms linear;
+            display: inline-block;
+            @media (min-width: 992px) {
+                &:hover {
+                    text-decoration: underline;
+                    transform: translateY(-14px) scale(1.2);
+                }
+            }
+        }
+    }
+}
