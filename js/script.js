@@ -30,6 +30,9 @@ let name = () => {
     nameList = nameList.filter((el) => el !== nameList[name]);
     // document.getElementById("names").innerHTML = nameList;
     console.log(nameList);
+    if (nameList.length === 0) {
+        document.querySelector('#do-the-generate').style.display = 'none';
+    }
 };
 let btn = document.getElementById("do-the-generate");
 btn.addEventListener("click", name);
