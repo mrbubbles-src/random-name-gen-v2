@@ -20,7 +20,6 @@ let nameList = [
     "Onur",
     "Osmel",
     "Rocco",
-    "Youssef",
 ];
 let name = () => {
     let name = Math.trunc(Math.random() * nameList.length);
